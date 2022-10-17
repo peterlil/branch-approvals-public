@@ -22,4 +22,7 @@ remote: error: At least 1 approving review is required by reviewers with write a
 ```
 
 Creating branch _b2_
-_committing to b2_
+_committing to b2 and publishing branch_
+That worked well.
+
+Creating pull request from _b2_ to _main_
