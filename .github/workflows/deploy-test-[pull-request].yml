@@ -1,0 +1,20 @@
+name: test1
+
+on:
+  pull_request:
+    types:
+      - closed
+    branches:
+      - 'releases/**'
+
+jobs:
+    
+  mother-of-all-steps:
+    if: github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+        echo The PR was merged
+
+      - name: 'Checkout GitHub Action'
+        uses: actions/checkout@v3
